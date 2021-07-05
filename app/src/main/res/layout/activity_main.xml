@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE7C0"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logouni"
+            android:layout_width="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="80dp"
+            android:src="@drawable/israunilogo" />
+
+        <TextView
+            android:layout_toRightOf="@+id/logouni"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="ISRA UNIVERSITY HYDERABAD"
+            android:textSize="18dp"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/white"
+            android:layout_below="@id/logouni"
+            android:id="@+id/view"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_below="@id/view"
+            android:fontFamily="@font/allerta"
+            android:id="@+id/title"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Wellcome in Generator\nMonitoring System"
+            android:textSize="18dp" />
+
+        <AnalogClock
+            android:id="@+id/simpleAnalogClock"
+            android:layout_toEndOf="@id/title"
+            android:layout_below="@id/logouni"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/title" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="340dp"
+            app:cardCornerRadius="10dp"
+            android:layout_below="@id/simpleAnalogClock"
+            app:cardElevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/tempicon"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/temperature"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tempvalue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:text="73"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10dp"
+                                android:text="o"
+                                />    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="C"
+                            />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Temperature"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="5dp"
+                    android:background="#CECECF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/electric"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/currentvalue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:text="73"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:text="Amp"
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Current"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="340dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/petrollevelid"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_below="@id/tempicon"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/pateroal_level"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Level"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/petrollevel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:text="High"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Petrol level"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="10dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/gem"
+            android:layout_centerHorizontal="true"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/petrollevelid">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Generator"
+                    android:id="@+id/d"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="22dp"
+                    android:textColor="@color/black"
+
+                    />
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/download"
+                    android:layout_alignParentRight="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description"
+                    android:layout_below="@+id/d"
+                    android:layout_marginLeft="10dp"
+                    android:text="Swap Button to Switch On \nand Off Generator"
+                    />
+                <Switch
+                    android:id="@+id/genswitch"
+                    android:padding="10dp"
+                    android:text="Generator Switch   "
+                    android:onClick="ongenerator"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/description"
+                    android:layout_height="wrap_content"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Generator is Close"
+                    android:layout_below="@id/genswitch"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#C62828"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/gentext"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@id/gem"
+            android:layout_height="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
